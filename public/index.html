@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>connect</title>
+</head>
+<body>
+    <main>
+        <header>
+            <div class="title">
+                <img src="images/logo.png" width="65px">
+                <h1>connect.in</h1>
+            </div>
+            <button type="button" onclick="show_hide()">
+                <img src="images/dropdown.png" alt="drop" width="45px">
+            </button>
+        </header>
+        <div class="container">
+            <div class="people">
+                <div class="user-head">
+                    <h3>People</h3>
+                    <h5 class="user-count"></h5>
+                </div>
+                <div class="user-list"></div>
+            </div>
+            <div class="chat">
+                <div class="chats">
+                    <div class="user-join">
+                        <p><b>You</b> joined the chat</p>
+                    </div>
+                </div>
+                <div class="text-msg">
+                    <input type="text" placeholder="Type your message..." id="user-msg">
+                    <button type="button" id="user-send"> Send </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/script/button.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/script/updateUsers.js"></script>
+    <script src="/script/texting.js"></script>
+</body>
+</html>
