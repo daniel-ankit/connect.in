@@ -2,6 +2,22 @@ var chats = document.querySelector(".chats");
 var user_send = document.querySelector('#user-send');
 var user_msg = document.querySelector('#user-msg');
 
+user_msg.addEventListener("keyup", (e)=>{
+    if(e.key == "Enter" && user_msg.value != "")
+    {
+        let data = {
+            user : username,
+            msg : user_msg.value
+        }
+        if(user_msg.val!='')
+        {
+            appendMessage(data, 'sent');
+            socket.emit('message', data);
+            user_msg.value = "";
+        }
+    }
+});
+
 user_send.addEventListener('click', ()=>{
     let data = {
         user : username,
