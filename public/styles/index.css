@@ -26,7 +26,7 @@ main {
   border-top-right-radius: 10px;
 }
 main header {
-  background-color: rgb(52, 169, 252);
+  background-color: rgb(111, 255, 63);
   color: white;
   padding: 7px 20px;
   text-shadow: 1px 1px 3px black;
@@ -145,7 +145,7 @@ main .container .chat .chats .sent {
   text-align: right;
   margin-left: auto;
   color: white;
-  background-color: rgb(52, 169, 252);
+  background-color: rgb(111, 255, 63);
 }
 main .container .chat .text-msg {
   bottom: 0px;
@@ -172,7 +172,7 @@ main .container .chat .text-msg button {
   width: 100px;
   border: none;
   outline: none;
-  background-color: rgb(52, 169, 252);
+  background-color: rgb(111, 255, 63);
   color: rgb(241, 241, 241);
   padding: 5px 15px;
   letter-spacing: 0.5px;
