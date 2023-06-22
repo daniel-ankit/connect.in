@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +18,7 @@
     <meta name="theme-color" content="#ffffff">
     <title>connect.in</title>
 </head>
+
 <body>
     <main>
         <header>
@@ -24,34 +26,12 @@
                 <img src="images/logo.png" width="65px">
                 <h1>connect.in</h1>
             </div>
-            <button type="button" onclick="show_hide()">
-                <img src="images/dropdown.png" alt="drop" width="45px">
-            </button>
         </header>
         <div class="container">
-            <div class="people">
-                <div class="user-head">
-                    <h3>People</h3>
-                    <h5 class="user-count"></h5>
-                </div>
-                <div class="user-list"></div>
-            </div>
-            <div class="chat">
-                <div class="chats">
-                    <div class="user-join">
-                        <p><b>You</b> joined the chat</p>
-                    </div>
-                </div>
-                <div class="text-msg">
-                    <input type="text" placeholder="Type your message..." id="user-msg">
-                    <button type="button" id="user-send"> Send </button>
-                </div>
-            </div>
+            <input type="text" placeholder="Enter Your Name" id="Login">
+            <button type="button" id="user-send"> Send </button>
         </div>
     </main>
-    <script src="/script/button.js"></script>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="/script/updateUsers.js"></script>
-    <script src="/script/texting.js"></script>
 </body>
+
 </html>

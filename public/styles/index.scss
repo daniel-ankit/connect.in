@@ -1,4 +1,4 @@
-$blue: rgb(111, 255, 63);
+$blue: rgb(29, 161, 255);
 $grey: rgb(241, 241, 241);
 $darker: rgb(122, 122, 122);
 $darkest: rgb(54, 54, 54);
@@ -148,7 +148,8 @@ main{
                 bottom: 0px;
                 margin-top: 20px;
                 align-items: center;
-                width: 95%;
+                justify-content: center;
+                width: 100%;
                 @include flexing(row, space-between, stretch);
                 input{
                     border-top-left-radius: 50px;
